@@ -34,7 +34,7 @@ setInterval(() => {
     if (info >= cpuOverload && runNotify(alertFrequency)) {
       notifyUser({
         title: 'CPU Overload',
-        body: `CPU is over ${cpuOverload}%`,
+        body: `CPU Usage is over ${cpuOverload}%`,
         icon: path.join(__dirname, 'img', 'icon.png'),
       });
 
